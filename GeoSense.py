@@ -31,7 +31,25 @@ minerals = {
     "Sphalerite": {"hardness": "3.5-4", "density": "4.0", "luster": "resinous/metallic", "streak": "light brown"},
     "Barite": {"hardness": "3-3.5", "density": "4.5", "luster": "vitreous", "streak": "white"},
     "Kyanite": {"hardness": "4-7", "density": "3.6", "luster": "vitreous", "streak": "white"},
-    "Turquoise": {"hardness": "5-6", "density": "2.6", "luster": "waxy/vitreous", "streak": "blue-green"}
+    "Turquoise": {"hardness": "5-6", "density": "2.6", "luster": "waxy/vitreous", "streak": "blue-green"},
+
+
+    "Ilmenite": {"hardness": "5-6", "density": "4.7", "luster": "metallic/submetallic", "streak": "black"},
+    "Chromite": {"hardness": "5.5", "density": "4.5-4.8", "luster": "metallic", "streak": "brown"},
+    "Celestite": {"hardness": "3-3.5", "density": "3.9-4.0", "luster": "vitreous", "streak": "white"},
+    "Spodumene": {"hardness": "6.5-7", "density": "3.1-3.2", "luster": "vitreous", "streak": "white"},
+    "Enstatite": {"hardness": "5-6", "density": "3.2", "luster": "vitreous", "streak": "white"},
+    "Wollastonite": {"hardness": "4.5-5", "density": "2.9", "luster": "vitreous/pearly", "streak": "white"},
+    "Cassiterite": {"hardness": "6-7", "density": "6.8-7.1", "luster": "adamantine", "streak": "brownish"},
+    "Anglesite": {"hardness": "2.5-3", "density": "6.3", "luster": "adamantine/vitreous", "streak": "white"},
+    "Scheelite": {"hardness": "4.5-5", "density": "6.0", "luster": "vitreous", "streak": "white"},
+    "Stibnite": {"hardness": "2", "density": "4.6", "luster": "metallic", "streak": "gray"},
+    "Realgar": {"hardness": "1.5-2", "density": "3.5", "luster": "resinous", "streak": "orange-red"},
+    "Sylvite": {"hardness": "2", "density": "1.99", "luster": "vitreous", "streak": "white"},
+    "Uraninite": {"hardness": "5-6", "density": "10.6", "luster": "submetallic", "streak": "brownish-black"},
+    "Vanadinite": {"hardness": "2.5-3", "density": "6.8-7.1", "luster": "resinous", "streak": "yellowish-brown"},
+    "Wulfenite": {"hardness": "2.5-3", "density": "6.5-7.0", "luster": "adamantine", "streak":"yellowish-white" }
+
 }
 
 
@@ -54,6 +72,8 @@ def on_click_1():
             score += 1
         percentage = (score / total) * 100
         results.append(f"{name}: {percentage:.0f}% match")
+        if percentage>50:
+            label_var.set(name)
 
     messagebox.showinfo("Result", "\n".join(results))
 
@@ -73,5 +93,8 @@ tk.Label(frame, text="Streak colour:").grid(row=3, column=0)
 streak_entry = tk.Entry(frame); streak_entry.grid(row=3, column=1)
 
 tk.Button(root, text="Submit", command=on_click_1).pack(pady=10)
+label_var = tk.StringVar()
+label = tk.Label(root, textvariable=label_var)
+label.pack(padx=10, pady=10)
 
 root.mainloop()
