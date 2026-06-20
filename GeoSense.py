@@ -14,8 +14,26 @@ minerals = {
     "Magnetite": {"hardness": "6", "density": "5.18", "luster": "metallic", "streak": "black"},
     "Pyrite": {"hardness": "6.5", "density": "5.0", "luster": "metallic", "streak": "greenish-black"},
     "Mica": {"hardness": "2.5", "density": "2.8", "luster": "pearly/vitreous", "streak": "white"},
-    "Olivine": {"hardness": "7", "density": "3.3", "luster": "vitreous", "streak": "colorless"}
+    "Olivine": {"hardness": "7", "density": "3.3", "luster": "vitreous", "streak": "colorless"},
+    "Galena": {"hardness": "2.5", "density": "7.6", "luster": "metallic", "streak": "gray-black"},
+    "Fluorite": {"hardness": "4", "density": "3.18", "luster": "vitreous", "streak": "white"},
+    "Corundum": {"hardness": "9", "density": "4.0", "luster": "adamantine/vitreous", "streak": "white"},
+    "Talc": {"hardness": "1", "density": "2.7", "luster": "pearly", "streak": "white"},
+    "Copper": {"hardness": "3", "density": "8.9", "luster": "metallic", "streak": "reddish"},
+    "Sulfur": {"hardness": "2", "density": "2.05", "luster": "resinous", "streak": "white"},
+    "Diamond": {"hardness": "10", "density": "3.5", "luster": "adamantine", "streak": "none"},
+    "Bauxite": {"hardness": "1-3", "density": "2.5", "luster": "dull/earthy", "streak": "white"},
+    "Chalcopyrite": {"hardness": "3.5-4", "density": "4.2", "luster": "metallic", "streak": "greenish-black"},
+    "Azurite": {"hardness": "3.5-4", "density": "3.8", "luster": "vitreous", "streak": "light blue"},
+    "Malachite": {"hardness": "3.5-4", "density": "4.0", "luster": "silky/vitreous", "streak": "green"},
+    "Cinnabar": {"hardness": "2-2.5", "density": "8.1", "luster": "adamantine", "streak": "red"},
+    "Bornite": {"hardness": "3", "density": "5.0", "luster": "metallic", "streak": "gray-black"},
+    "Sphalerite": {"hardness": "3.5-4", "density": "4.0", "luster": "resinous/metallic", "streak": "light brown"},
+    "Barite": {"hardness": "3-3.5", "density": "4.5", "luster": "vitreous", "streak": "white"},
+    "Kyanite": {"hardness": "4-7", "density": "3.6", "luster": "vitreous", "streak": "white"},
+    "Turquoise": {"hardness": "5-6", "density": "2.6", "luster": "waxy/vitreous", "streak": "blue-green"}
 }
+
 
 def on_click_1():
     hardness = hardness_entry.get()
