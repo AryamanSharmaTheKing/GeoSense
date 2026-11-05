@@ -65,7 +65,7 @@ python main.py
 |----------|---------|
 | Hardness | 7 |
 | Density | 2.65 |
-| Luster | vitreous |
+| Lustre | vitreous |
 | Streak | white |
 
 The program compares these values with its database and displays the matching results.
