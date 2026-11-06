@@ -8,7 +8,7 @@ GeoSense is a simple Python application that helps identify minerals based on th
 - Mineral identification using:
   - Hardness (Mohs scale)
   - Density
-  - Luster
+  - lustre
   - Streak color
 - Displays the percentage match for each mineral
 - Highlights the mineral with the highest matching score (above 50%)
@@ -25,7 +25,7 @@ GeoSense is a simple Python application that helps identify minerals based on th
 
 1. Enter the mineral's hardness.
 2. Enter its density.
-3. Enter the luster.
+3. Enter the lustre.
 4. Enter the streak color.
 5. Click the **Submit** button.
 6. The application compares the entered values with the mineral database.
